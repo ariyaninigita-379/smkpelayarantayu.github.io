@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Taruna Baru - SMK Pelayaran Tayu</title>
+
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('kapal.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      background-color: rgba(0, 51, 102, 0.9);
+      text-align: center;
+      padding: 25px;
+      border-bottom: 5px solid #00bcd4;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header img {
+      width: 80px;
+      border-radius: 50%;
+      border: 3px solid #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      color: #00e5ff;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    header h3 {
+      color: #b2ebf2;
+      font-weight: normal;
+    }
+
+    /* Formulir */
+    main {
+      width: 80%;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    main h2 {
+      text-align: center;
+      color: #00e5ff;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #b2ebf2;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      width: 100%;
+      background-color: #e0f7fa;
+      color: #003366;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      box-shadow: 0 0 10px #00bcd4;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .btn-submit {
+      background-color: #00bcd4;
+      color: #003366;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #00e5ff;
+    }
+
+    .btn-submit:hover {
+      background-color: #00e5ff;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      color: #b2ebf2;
+      font-size: 14px;
+      border-top: 4px solid #00bcd4;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="Picture1.JPG" alt="Logo SMK Pelayaran Tayu">
+    <h1>SMK PELAYARAN TAYU</h1>
+    <h3>Bahari Adhiguna ⚓ Pendaftaran Taruna Baru 2025/2026</h3>
+  </header>
+
+  <main>
+    <h2>Formulir Pendaftaran Taruna Baru</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <!-- Ganti 'your-form-id' dengan ID Formspree kamu jika ingin aktif -->
+
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="nisn">NISN:</label>
+      <input type="text" id="nisn" name="nisn" required>
+
+      <label for="tempatlahir">Tempat Lahir:</label>
+      <input type="text" id="tempatlahir" name="tempatlahir" required>
+
+      <label for="tanggallahir">Tanggal Lahir:</label>
+      <input type="date" id="tanggallahir" name="tanggallahir" required>
+
+      <label for="alamat">Alamat Lengkap:</label>
+      <textarea id="alamat" name="alamat" required></textarea>
+
+      <label for="jurusan">Pilih Jurusan:</label>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">-- Pilih Jurusan --</option>
+        <option value="Nautika Kapal Niaga">Nautika Kapal Niaga</option>
+        <option value="Agribisnis Pengolahan Hasil Perikanan">Agribisnis Pengolahan Hasil Perikanan</option>
+      </select>
+
+      <label for="email">Email Aktif:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telepon">Nomor Telepon / WhatsApp:</label>
+      <input type="text" id="telepon" name="telepon" required>
+
+     		 <button type="submit" class="btn-submit">🚢 Kirim Pendaftaran</button>
+     		 <a class="btn-submit" href="index.html">Home
+     		 </a>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SMK Pelayaran Tayu - Bahari Adhiguna. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
